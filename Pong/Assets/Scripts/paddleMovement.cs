@@ -13,7 +13,6 @@ public class paddleMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Input.mousePosition);
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = new Vector3(transform.position.x, Mathf.Clamp(mousePosition.y, -3.89f, 3.89f), transform.position.z);
     }
